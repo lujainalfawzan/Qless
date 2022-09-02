@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="326dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="New Partner Request"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/menufood"
+        android:layout_width="326dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="264dp"
+        android:background="#FFFEFE"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Shop's Food Menu,example:itemName,itemPrice,itemId-itemName2,ect... "
+        android:inputType="textMultiLine"
+        android:textColorHint="#03A9F4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/menudrink"
+        android:layout_width="326dp"
+        android:layout_height="92dp"
+        android:background="#FFFEFE"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Shop's Drink Menu,example:itemName,itemPrice,itemId-itemName2,ect... "
+        android:inputType="textMultiLine"
+        android:textColorHint="#03A9F4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menufood"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <EditText
+        android:id="@+id/shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Shop's name"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#03A9F4"
+        app:layout_constraintBottom_toTopOf="@+id/menufood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#D503A9F4"
+        android:text="Send"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopname"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <CheckBox
+        android:id="@+id/checkBoxC"
+        android:layout_width="109dp"
+        android:layout_height="32dp"
+        android:buttonTint="#FFFFFF"
+        android:text="CoffeeShop"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toTopOf="@+id/shopname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.689" />
+
+    <CheckBox
+        android:id="@+id/checkBoxR"
+        android:layout_width="109dp"
+        android:layout_height="31dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Restaurant"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toTopOf="@+id/shopname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.905" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
